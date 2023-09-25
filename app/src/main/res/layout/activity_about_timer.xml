@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutTimer"
+    android:background="@drawable/background">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/txtTimerGG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="TIMER"
+        android:textStyle="bold"
+        android:textColor="@color/dourado"
+        android:textSize="50dp"></TextView>
+
+    <TextView
+        android:id="@+id/txtGG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTimerGG"
+        android:textStyle="bold"
+        android:textColor="@color/dourado"
+        android:textSize="40dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtInstrucao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instruções de uso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGG"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtConteudo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Pressione o botão 'Start match' no momento que a partida começar (pós tela de
+carregamento). Fique tranquilo quanto à apertar o botão alguns segundinhos depois, contamos com uma margem
+de erro confortável."
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtInstrucao"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtConteudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Atente-se ao cronometro no topo do app, lá você encontrará dicas
+e avisos que poderão ser de grande importância! (lembrando que sempre antes de seguir uma instrução
+cegamente, veja se é viável seguir a mesma)."
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtConteudo4"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtConteudo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Para marcar o tempo do flash de um inimigo, aperte no ícone da spell que se
+localiza abaixo do símbolo rota do adversário em questão (top, mid, bot)."
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtConteudo"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtConteudo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Para marcar o tempo dos objetivos no mapa, você pode usar o ícone do barão
+para seguintes os monstros épicos: Barão, arauto e dragão ancião. Os demais monstros épicos
+(dragões elementais) podem ter seu tempo marcado simplesmente pelo botão do dragão"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtConteudo2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        >
+    </TextView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".StartScreen"
+    android:keepScreenOn="true">
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Chronometer>
+
+    <TextView
+        android:id="@+id/textAlertaTemporizador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Alerta"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cronometro" />
+
+    <ImageView
+        android:id="@+id/dragon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAlertaTemporizador"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        android:layout_marginRight="300dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/dragonsquare"></ImageView>
+
+    <ImageView
+        android:id="@+id/baron"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAlertaTemporizador"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        android:layout_marginLeft="290dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/baron_icon"></ImageView>
+
+    <TextView
+        android:id="@+id/txtDragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="300dp"
+        android:text="Alive"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <Chronometer
+        android:id="@+id/tempoDragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginRight="300dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:countDown="true"
+        app:layout_constraintTop_toBottomOf="@+id/dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"></Chronometer>
+
+    <TextView
+        android:id="@+id/txtBaron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="290dp"
+        android:text="Alive"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <Chronometer
+        android:id="@+id/tempoBaron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="290dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:countDown="true"
+        app:layout_constraintTop_toBottomOf="@+id/dragon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"></Chronometer>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:outlineSpotShadowColor="@color/cinza">
+
+
+        <ImageView
+            android:id="@+id/flashJungle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="175dp"
+            android:src="@drawable/flash"></ImageView>
+
+        <ImageView
+            android:id="@+id/flashMid"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="332dp"
+            android:src="@drawable/flash"></ImageView>
+
+        <ImageView
+            android:id="@+id/flashAdc"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="230dp"
+            android:src="@drawable/flash"></ImageView>
+
+        <ImageView
+            android:id="@+id/flashTop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/flash"></ImageView>
+
+        <ImageView
+            android:id="@+id/flashSup"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="264dp"
+            android:layout_marginTop="230dp"
+            android:src="@drawable/flash"></ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="180dp"
+            android:src="@drawable/suport_icon"></ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="178dp"
+            android:src="@drawable/marksman_icon"></ImageView>
+
+        <TextView
+            android:id="@+id/txtFTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="18dp"
+            android:paddingLeft="20dp"
+            android:text="UP!"
+            android:textStyle="bold"
+            android:textColor="@color/white"></TextView>
+
+        <Chronometer
+            android:id="@+id/tempoFTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:countDown="true"
+            android:visibility="invisible"></Chronometer>
+
+        <TextView
+            android:id="@+id/txtFJungle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="UP!"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="172dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"></TextView>
+
+        <Chronometer
+            android:id="@+id/tempoFJungle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="172dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:countDown="true"
+            android:visibility="invisible"></Chronometer>
+
+        <TextView
+            android:id="@+id/txtFMid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="UP!"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="328dp"
+            android:textStyle="bold"
+            android:countDown="true"
+            android:textColor="@color/white"></TextView>
+
+        <Chronometer
+            android:id="@+id/tempoFMid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="328dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:countDown="true"></Chronometer>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/top_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"></ImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/jungle_icon"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="180dp"></ImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/middle_icon"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="338dp"></ImageView>
+
+    <TextView
+        android:id="@+id/txtFSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UP!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <Chronometer
+        android:id="@+id/tempoFSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp"
+        android:countDown="true"
+        android:visibility="invisible"></Chronometer>
+
+    <TextView
+        android:id="@+id/txtFAdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UP!"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginRight="165dp"
+        android:layout_marginTop="10dp"
+        ></TextView>
+
+    <Chronometer
+        android:id="@+id/tempoFAdc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:layout_marginRight="165dp"
+        android:layout_marginTop="10dp"
+        android:countDown="true"
+        android:visibility="invisible"></Chronometer>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
